@@ -25,3 +25,10 @@ Route::middleware(['auth',AuthAdmin::class])->group(function(){
 
 });
 
+Route::get('/about',function(){
+    return view('about');
+});
+
+Route::get('/wishlist',function(){
+    return view('layouts.wishlist');
+});
